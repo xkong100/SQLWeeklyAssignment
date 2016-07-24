@@ -1,3 +1,4 @@
+1.
 CREATE TABLE Video
 (
 ID int,
@@ -13,7 +14,7 @@ INSERT INTO Video (ID,Title, Length, URL) VALUES (3,'Coldplay - Up&Up', '4:10', 
 
 Select * From Video;
 
-
+2.
 CREATE TABLE Reviews
 (
 UserName varchar(255),
@@ -30,7 +31,7 @@ Insert into Reviews (UserName, Rating,review, ID) Values ('Vivian', 5, 'Great So
 Insert into Reviews (UserName, Rating,review, ID) Values ('Herna', 5, 'Love them', 3);
 
 select*from Reviews;
-
+3.
 Select Video.Title, Video.Length, Video.URL, Reviews.UserName, Reviews.Rating, Reviews.review
 From Video
 join Reviews
